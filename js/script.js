@@ -115,15 +115,15 @@ const icons = [
 
 
 
-icons.forEach((element, index) => {
+icons.forEach((element) => {
     const eleContainer = document.querySelector(".cards")
     eleCard = document.createElement("div")
     eleCard.classList.add("card")
-    // eleContainer.append(eleCard)
-    // eleCard.innerHTML +=
-    // `
-    // <i class=${element[index].family + element[index].prefix + element[index].name} 
-    // <h4> ${element[index].name} </h4>
+    eleContainer.append(eleCard)
+     eleCard.innerHTML +=
+    `
+     <i class="${element.family} ${element.prefix}${element.name}" 
+     <h4> ${element.name} </h4>
     
-    // `
+     `
 })
