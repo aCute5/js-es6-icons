@@ -114,15 +114,16 @@ const icons = [
 ];
 
 
+
 icons.forEach((element, index) => {
     const eleContainer = document.querySelector(".cards")
-    let eleCard = document.createElement("div")
+    eleCard = document.createElement("div")
     eleCard.classList.add("card")
-    eleContainer.append(eleCard)
-    eleCard.innerHTML +=
-    `
-    <i class=${element[index].family + element[index].prefix + element[index].name} 
-    <h4> ${element[index].name} </h4>
+    // eleContainer.append(eleCard)
+    // eleCard.innerHTML +=
+    // `
+    // <i class=${element[index].family + element[index].prefix + element[index].name} 
+    // <h4> ${element[index].name} </h4>
     
-    `
+    // `
 })
