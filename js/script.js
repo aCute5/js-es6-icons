@@ -135,8 +135,8 @@ const eleSelect = document.querySelector(".typecard")
 const eleContainer = document.querySelector(".cards")
 eleSelect.onchange = function(){
 	let selectedType = this.value
-	if (selectedType= "animal") {
-		eleContainer.innerHTML = "";
+	if (selectedType === "animal") {
+		eleContainer.innerHTML ="";
 	
 		arrAnimals.forEach((element) => {
 			eleCard = document.createElement("div")
@@ -150,23 +150,20 @@ eleSelect.onchange = function(){
 			 `
 		})
 		
-	} else if (selectedType = "vegetable") {
+	} else if (selectedType === "vegetable") {
 		eleContainer.innerHTML = "";
-		
+	
 		arrVegetables.forEach((element) => {
-			eleContainer.innerHTML = ""
-			eleCard = document.createElement("div")
-			eleCard.classList.add("card")
-			eleContainer.append(eleCard)
-			 eleCard.innerHTML +=
-			`
-			 <i class="${element.family} ${element.prefix}${element.name}" style = color:${element.color} </i> 
-			 <h4> ${element.name} </h4>
-			
-			 `
-		})
-		
-	} else if (selectedType = "user") {
+		  eleCard = document.createElement("div");
+		  eleCard.classList.add("card");
+		  eleContainer.append(eleCard);
+		  eleCard.innerHTML += `
+				 <i class="${element.family} ${element.prefix}${element.name}" style = color:${element.color} </i> 
+				 <div class= "title"> ${element.name} </div>
+				
+				 `;
+		});
+	} else if (selectedType === "user") {
 		eleContainer.innerHTML = "";
 	
 		arrUsers.forEach((element) => {
