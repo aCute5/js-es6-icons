@@ -41,7 +41,11 @@ nav{
     flex-grow: 0;
     height: 100px;
     border-radius: 1rem;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     gap: .5rem;
+}
+.title{
+    padding: 1rem;
+    color: black;
 }
